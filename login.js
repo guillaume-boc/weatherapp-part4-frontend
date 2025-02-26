@@ -9,7 +9,7 @@ document.getElementById('register').addEventListener('click', async () => {
         console.log('email =>', email);
         console.log('password =>', password);
 
-        const reponse = await (await fetch('https://weatherapp-part4-backend-bice.vercel.app/users/signup', {
+        const reponse = await (await fetch('https://weatherapp-part4-backend-tmjj.vercel.app/users/signup', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -38,7 +38,7 @@ document.getElementById('connection').addEventListener('click', async () => {
         console.log('email =>', email);
         console.log('password =>', password);
 
-        const reponse = await (await fetch('https://weatherapp-part4-backend-bice.vercel.app/users/signin', {
+        const reponse = await (await fetch('https://weatherapp-part4-backend-tmjj.vercel.app/users/signin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
